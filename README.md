@@ -2,7 +2,7 @@
 Scrape trending videos on YouTube using Selenium and AWS Lambda!
 
 - Web scraping is a great way to extract public information from websites and create datasets for data analysis and machine learning. 
-- Through [this workshop](https://www.youtube.com/watch?v=FcW-AXsirBE), I understood the process of building and deploying a web scraping project from scratch using Python, Selenium, and AWS Lambda. 
+- I learnt the process of building and deploying a web scraping project from scratch using Python, Selenium, and AWS Lambda from this [hands-on workshop](https://www.youtube.com/watch?v=FcW-AXsirBE)
 
 # Objective
 1. Scrape top 10 trending videos on YouTube using Selenium
