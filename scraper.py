@@ -12,17 +12,15 @@ def get_driver():
     chrome_options.add_argument('--no-sandbox')
     chrome_options.add_argument('--headless')
     chrome_options.add_argument('--disable-dev-shm-usage')
-    print(f'[x] Creating chrome driver object for selenium')
-    driver = webdriver.Chrome(options=chrome_options)
-    return driver
+    print('[x] Creating chrome driver object for selenium')
+    return webdriver.Chrome(options=chrome_options)
 
 
 def get_videos(driver):
     print('[x] Fetching YouTube trending videos page')
     driver.get(YOUTUBE_TRENDING_URL)
     VIDEO_DIV_TAG = 'ytd-video-renderer'
-    videos = driver.find_elements(By.TAG_NAME, VIDEO_DIV_TAG)
-    return videos
+    return driver.find_elements(By.TAG_NAME, VIDEO_DIV_TAG)
 
 
 def parse_video(video):
